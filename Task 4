@@ -1,0 +1,19 @@
+movies = {
+    "Action": ["Leo", "Vikram", "Jailer"],
+    "Comedy": ["Boss Engira Bhaskaran", "OK OK", "Kalakalappu"],
+    "Romance": ["96", "Sita Ramam", "Love Today"],
+    "Thriller": ["Ratsasan", "Por Thozhil", "Thadam"]
+}
+
+print("Available Categories:")
+for category in movies:
+    print("-", category)
+
+choice = input("\nChoose a category: ")
+
+if choice in movies:
+    print("\nRecommended Movies:")
+    for movie in movies[choice]:
+        print(movie)
+else:
+    print("Category not found.")
